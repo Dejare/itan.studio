@@ -1,0 +1,72 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  color: #eae9e4;
+  z-index: 100;
+  overflow: hidden;
+  transform: translateY(0%);
+  .letter {
+    display: inline-block;
+  }
+  h1 {
+    font-family: "fontLight";
+    font-size: 3rem;
+    text-transform: lowercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-family: "fontLight", sans-serif;
+    mix-blend-mode: difference;
+  }
+  .mouse_circle {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mouseCircle 1.5s infinite;
+    color: black;
+  }
+
+  .c-noise {
+    animation: grain 6s steps(10) infinite;
+    background-image: url("../assets/images/noise-full.png");
+    background-repeat: repeat;
+    height: 300%;
+    left: -50%;
+    opacity: 0.035;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: 100;
+  }
+
+  .c-old {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../assets/images/old.webp");
+    opacity: 0.05;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 150;
+  }
+}

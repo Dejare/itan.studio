@@ -1,0 +1,29 @@
+.main {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-direction: row;
+
+    h1 {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        font-weight: 600;
+      }
+    }
+    .c-header-nav {
+      display: flex;
+      flex-direction: row;
+      z-index: 100;
+      .c-header-nav-icon {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

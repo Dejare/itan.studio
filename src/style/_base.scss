@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "fontLight";
+  src: url("../assets/fonts/IvyMode-Light.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontRegular";
+  src: url("../assets/fonts/IvyMode-Regular.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontMedium";
+  src: url("../assets/fonts/IvyMode-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "fontRegular";
+}
+
+a,
+p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+$bg_main: #d9d8d4;
+
+.c-noise {
+  animation: grain 6s steps(10) infinite;
+  background-image: url("../assets/images/noise-full.png");
+  background-repeat: repeat;
+  height: 300%;
+  left: -50%;
+  opacity: 0.035;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: 100;
+}
+
+.c-old {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/images/old.webp");
+  opacity: 0.05;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 150;
+}
