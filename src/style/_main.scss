@@ -1,4 +1,10 @@
 .main {
+
+
+  .c-page-main {
+    padding: 1rem 4rem;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -8,22 +14,49 @@
 
     h1 {
       font-weight: 300;
-      font-size: 1.4rem;
+      font-size: 2rem;
     }
+
     a {
       color: black;
       text-decoration: none;
+      font-size: 1.4rem;
+
       &:hover {
         font-weight: 600;
       }
     }
+
     .c-header-nav {
       display: flex;
       flex-direction: row;
+      align-items: center;
       z-index: 100;
-      .c-header-nav-icon {
+
+      .icon {
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 8px;
         margin-left: 2rem;
       }
+
+      .c-header-nav-icon {
+
+        font-size: 1.4rem;
+      }
     }
+  }
+
+  .c-page-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #404040;
+    z-index: 100;
+  }
+
+  .c-main-hero {
+    height: 100vh;
+    position: relative;
   }
 }
